@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://DevHacks.github.io",
+  "homepage": "https://cleverits.github.io/DevHacks",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
