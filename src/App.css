@@ -1,0 +1,433 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+::selection {
+  background-color: #2194ff;
+  color: white;
+}
+/*-------------------------------------------------------------------------------------------------------------*/ 
+.header {
+  width: 100%;
+  min-height: 17vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+  background: #141414; /* Մուգ պրեմիում տեսք */
+  color: #ffffff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6); /* Խորություն */
+  border-bottom: 3px solid #2194ff; /* Միշտ տեսանելի կապույտ եզրագիծ */
+}
+
+.navbar {
+  display: flex;
+  gap: 30px;
+}
+
+.navbar a {
+  position: relative;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, #2194ff, #00eaff);
+}
+
+.navbar a:hover {
+  color: #2194ff;
+}
+
+.navbar .active {
+  color: #2194ff;
+}
+
+.navbar .active::after {
+  width: 100%;
+}
+
+/*-------------------------------------------------------------------------------------------------------------*/
+.container {
+  background-image: url(../public/vite.png);
+  width: 100%;
+  height: 800px;
+  background-size: cover;
+  background-position: 10% 100%;
+}
+/*-------------------------------------------------------------------------------------------------------------*/
+.container2 {
+  background-color: #191919;
+  width: 100%;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+
+}
+.container2 div {
+  font-size: 20px;
+  padding-top: 300px;
+  & span {
+    color: #2194ff;
+    letter-spacing: 6px;
+    line-height: 2;
+    cursor: grab;
+  }
+  & span:hover {
+    transition: all 1s;
+    color: #11528f;
+  }
+  & h2 {
+    color: white;
+  }
+}
+
+
+
+.container3 {
+  border-top: 3px solid #2194ff;
+  border-bottom: 3px solid #212121;
+  background-color: #191919;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  gap: 20px;
+}
+.container3 div {
+  height: 100%;
+  width: 49%;
+}
+.container3 div img {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container3_1{
+  
+  width: 100%;
+  height: 500px;
+  display: flex;
+  background-color: #191919;
+  gap: 20px;
+  & div{
+    height: 100%;
+    width: 49%;
+  }
+  & img{
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+  }
+}
+
+/*-------------------------------------------------------------------------------------------------------------*/
+.Footer {
+  background-color: #191919;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 3px solid #2194ff;
+  border-bottom: 3px solid #2194ff;
+  & h3 {
+    color: #fff;
+    letter-spacing: 2.5px;
+    font-size: 25px;
+    
+  }
+}
+.Footer span,p{
+  color: gray;
+}
+.Footer span:hover,p:hover{
+    transition: all .3s;
+    color: #2194ff;
+    cursor: pointer;
+}
+.Footer_Block {
+  display: flex;
+  gap: 30px;
+  height: 70%;
+  background-color: #191919;
+  width: 86%;
+  & div {
+    flex: 1;
+  }
+}
+.Footer_block1{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  & p{
+    letter-spacing: 1px;
+    line-height: 1.5;
+  }
+   
+}
+.Footer_block2{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.Footer_block3{
+  display: flex;
+  flex-direction: column;
+  height: 50%;  
+  
+  & div{
+    padding-top: 20px;
+    flex: 1;
+    display: flex;
+    gap: 10px;
+    justify-content: start;
+    align-items: start;
+  }
+  & img{
+    width: 27px !important; 
+    height: 27px !important; 
+  }
+  & span{
+    padding-top: 4px;
+  }
+  & img:hover{
+    transform: scale(1.4);
+    cursor: pointer;
+  }
+
+}
+
+.Footer_block4 img {
+  width: 40px; /* Համապատասխան չափը */
+  height: 40px; /* Համապատասխան չափը */
+  margin-top: 30px;
+  margin-right: 25px; /* Միջսահմանային տարածություն */
+
+}
+
+.Footer_block4 a:hover img {
+  transform: scale(1.3); /* Զարքավորել icon-ը երբ hover լինում է */
+}
+
+/*-------------------------------------------------------------------------------------------------------------*/
+
+.Footer2 {
+  
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  letter-spacing: 2px;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 130px;
+  background-color: black;
+  color: gray;
+  & span{
+    padding-top: 50px;
+  }
+  & span:hover{
+    transition: all .3s;
+    color: #2194ff;
+    cursor: e-resize;
+  }
+}
+
+/*-------------------------------------------------------------------------------------------------------------*/
+
+.Contact1{
+  width: 100%;
+  height: 840px;
+  display: flex;
+}
+.Contact1_2{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Contact1_1{
+  flex: 1;
+  border-right: 0.1px solid rgb(199, 192, 192);
+  display: flex;
+  flex-direction: column; 
+  & p:hover{
+    color: #2194ff !important;
+  }
+}
+.Contact1_1_1{
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  height: 53%;
+  & h4{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 20px;
+    color: #2194ff;
+    letter-spacing: 5px;
+    font-size: 15px;
+    word-spacing: 3px;
+    text-transform: uppercase;
+  }
+  & h2{
+    font-size: 29px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+  & p{
+    color: gray;
+    font-size: 16px;
+    letter-spacing: 1.6px;
+    word-spacing: 2px;
+    line-height: 1.5;
+    text-align: start;
+  }
+  
+
+}.Contact1_1_2{
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  height: 27%;
+  & h2{
+    font-size: 27px;
+    letter-spacing: 2px;
+  }
+  & div{
+    display: flex;
+    gap: 20px;
+    justify-content: start;
+    align-items: start;
+    & img{
+      width: 30px;
+      height: 30px;
+    }
+    & img:hover{
+      transform: scale(1.6);
+      cursor: pointer;
+    }
+    & p{
+      padding-top: 6px;
+    }
+  }
+}
+.Contact1_1_3{
+  height: 20%;
+  padding-left: 50px;
+  & h2{
+    padding-top: 10px;
+    letter-spacing: 2px;
+    font-size: 28px;
+  }
+
+  & div{
+    display: flex;
+    gap: 30px;
+    margin-left: 170px;
+    margin-top: 20px;
+    & img{
+      width: 45px;
+      height: 45px;
+    }
+    & img:hover{
+      transform: scale(1.3);
+      cursor: pointer;
+    }
+  }
+}
+
+
+/*-------------------------------------------------------------------------------------------------------------*/
+.Blog{
+  width: 100%;
+  height: 1500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  & h2{
+    font-size: 45px;
+    letter-spacing: 4px;
+    padding-top: 40px;
+    font-weight: 900;
+    line-height: 1.9; 
+    font-family: monospace;
+  }
+}
+
+.Blog_Container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 27px;
+  width: 90%;
+  padding-top: 70px;
+  padding-bottom: 100px;
+  & img{
+    width: calc((100% - 81px)/4);
+    object-fit: contain;
+    border: 0.5px solid gray;
+
+    cursor: pointer;
+  }
+  & img:hover{
+    transform: scale(1.07);
+  }
+}
+
+/*-------------------------------------------------------------------------------------------------------------*/
+
+
+.Posts {
+  width: 100%;
+  height: 2000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  & h2 {
+    font-size: 45px;
+    letter-spacing: 4px;
+    padding-top: 40px;
+    font-weight: 900;
+    line-height: 1.9;
+    font-family: monospace;
+  }
+}
+
+.Posts_Container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 90%;
+  padding-top: 50px;
+  justify-content: center;
+
+  & video {
+    width: calc((100% - 150px) / 5);
+    border: 1px solid gray;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
