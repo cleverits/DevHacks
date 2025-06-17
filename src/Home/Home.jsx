@@ -4,9 +4,7 @@ import Footer2 from "../Footers/Footer2";
 export default function Home() {
   return (
     <>
-      <section className="container">
-        <h1>Edmon</h1>
-      </section>
+      
       <section className="container2">
         <div>
           <h2>
