@@ -24,13 +24,18 @@ const videoSources = [
 ];
 
 export default function Posts() {
+  const baseUrl = import.meta.env.BASE_URL || "/";
+
   return (
     <>
       <section className="Posts">
         <div className="Posts_Container">
           {videoSources.map((fileName, index) => (
             <video key={index} controls width="600" preload="metadata">
-              <source src={`/PolirovkaNkar/${fileName}`} type="video/mp4" />
+              <source
+                src={`${baseUrl}PolirovkaNkar/${fileName}`}
+                type="video/mp4"
+              />
               Your browser does not support the video tag.
             </video>
           ))}
