@@ -431,3 +431,175 @@
     }
   }
 }
+
+/* Mobile Styles: մինչև 767px էկրաններ */
+@media (max-width: 767px) {
+  .header {
+    flex-direction: column;
+    min-height: auto;
+    padding: 15px 10px;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .navbar a {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .container {
+    height: 400px; /* Կրճատել բարձրությունը */
+    background-position: center center;
+  }
+
+  .container2 {
+    height: auto;
+    padding: 40px 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container2 div {
+    padding-top: 0;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .container2 div span {
+    letter-spacing: 3px;
+  }
+
+  .container3,
+  .container3_1 {
+    flex-direction: column;
+    height: auto;
+    gap: 15px;
+  }
+
+  .container3 div,
+  .container3_1 div {
+    width: 100%;
+    height: 250px;
+  }
+
+  .container3 div img,
+  .container3_1 img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .Footer {
+    height: auto;
+    padding: 40px 20px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .Footer h3 {
+    font-size: 22px;
+    letter-spacing: 1.5px;
+  }
+
+  .Footer_Block {
+    flex-direction: column;
+    gap: 25px;
+    width: 100%;
+  }
+
+  .Footer_block1,
+  .Footer_block2,
+  .Footer_block3,
+  .Footer_block4 {
+    width: 100%;
+  }
+
+  .Footer_block3 div {
+    justify-content: center;
+  }
+
+  .Footer_block4 img {
+    margin: 15px auto 0;
+    display: block;
+  }
+
+  .Footer2 {
+    height: 80px;
+    font-size: 14px;
+  }
+
+  .Contact1 {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .Contact1_1,
+  .Contact1_2 {
+    flex: none;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .Contact1_1 {
+    border-right: none;
+    border-bottom: 0.1px solid rgb(199, 192, 192);
+  }
+
+  .Contact1_1_1,
+  .Contact1_1_2,
+  .Contact1_1_3 {
+    padding-left: 0;
+    gap: 15px;
+  }
+
+  .Contact1_1_3 div {
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  .Contact1_1_3 div img,
+  .Contact1_1_2 img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .Blog {
+    height: auto;
+    padding: 20px 10px 60px;
+  }
+
+  .Blog h2 {
+    font-size: 32px;
+  }
+
+  .Blog_Container {
+    width: 100%;
+    gap: 15px;
+  }
+
+  .Blog_Container img {
+    width: calc((100% - 45px) / 2);
+  }
+
+  .Posts {
+    height: auto;
+    padding-bottom: 60px;
+  }
+
+  .Posts h2 {
+    font-size: 32px;
+  }
+
+  .Posts_Container {
+    width: 100%;
+    gap: 15px;
+  }
+
+  .Posts_Container video {
+    width: calc((100% - 60px) / 2);
+  }
+}
