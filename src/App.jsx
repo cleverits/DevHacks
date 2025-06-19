@@ -10,7 +10,7 @@ const links = [
   { link: "ԳԼԽԱՎՈՐ", route: "/", id: 1 },
   { link: "ԾԱՌԱՅՈՒԹՅՈՒՆՆԵՐ", route: "/posts", id: 2 },
   { link: "ԲԼՈԳ", route: "/blog", id: 3 },
-  { link: "ԿՈՆՏԱԿՏՆԵՐ", route: "/contact", id: 4 },
+  { link: "ԿՈՆՏԱԿՏՆԵՐ", route: "/contact", id: 4 },   
 ];
 
 export default function App() {
@@ -19,8 +19,8 @@ export default function App() {
         <>
           <header className="header">
             <img
-              src="/Снимок экрана 2025-03-03 103652.png"
-              alt="Vite Png"
+              src={`${import.meta.env.BASE_URL}screenshot.png`}
+              alt="screenshot"
               style={{
                 width: "200px",
                 height: "100px",

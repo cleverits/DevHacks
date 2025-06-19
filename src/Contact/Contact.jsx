@@ -26,15 +26,30 @@ export default function Contact() {
           <div className="Contact1_1_2">
             <h2 style={{ textTransform: "uppercase" }}>Գտնվելու վայրը</h2>
             <div>
-              <img src="/PolirovkaNkar/icons8-location-100 (1).png" alt="" />
+              <img
+                src={`${
+                  import.meta.env.BASE_URL
+                }PolirovkaNkar/icons8-location-100 (1).png`}
+                alt=""
+              />
               <p>Vanadzor</p>
             </div>
             <div>
-              <img src="/PolirovkaNkar/icons8-telephone-100 (1).png" alt="" />
+              <img
+                src={`${
+                  import.meta.env.BASE_URL
+                }PolirovkaNkar/icons8-telephone-100 (1).png`}
+                alt=""
+              />
               <p>+(374) 94-52-88-52</p>
             </div>
             <div>
-              <img src="/PolirovkaNkar/icons8-email-96.png" alt="" />
+              <img
+                src={`${
+                  import.meta.env.BASE_URL
+                }PolirovkaNkar/icons8-email-96.png`}
+                alt=""
+              />
               <p>autopolishing@gmail.com</p>
             </div>
           </div>
@@ -44,18 +59,24 @@ export default function Contact() {
               <a
                 href="https://www.facebook.com/profile.php?id=61556186294309"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <img
-                  src="/PolirovkaNkar/free-icon-facebook-3670271.png"
+                  src={`${
+                    import.meta.env.BASE_URL
+                  }PolirovkaNkar/free-icon-facebook-3670271.png`}
                   alt=""
                 />
               </a>
               <a
-                href="https://www.instagram.com/_avto__polirovka/"
+                href="https://www.instagram.com/_auto_detailing_/"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <img
-                  src="/PolirovkaNkar/free-icon-instagram-1384015 (1).png"
+                  src={`${
+                    import.meta.env.BASE_URL
+                  }PolirovkaNkar/free-icon-instagram-1384015 (1).png`}
                   alt=""
                 />
               </a>
